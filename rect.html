@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gourav bro</title>
+    <title>Rect Calculater</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <!-- this is the area of rect -->
     <div class="container">
         <ul class="nav nav-tabs">
             <li class="nav-item">
@@ -43,11 +44,42 @@
                 <a class="nav-link" href="bmi.html">BMI</a>
             </li>
         </ul>
-        <h1 class="text-center">Gourav bro</h1>
-        <figure class="figure">
-            <img src="img/moodie1.jpg" class="figure-img img-fluid rounded" alt="A beautiful pic">
-            <figcaption class="figure-caption text-right">This is my sister anshika.</figcaption>
-        </figure>
+        <div class="input-group my-2">
+            <input type="number" title="This is side a" class="form-control" id="rectAa" placeholder="Enter a side">
+            <div class="input-group-append">
+                <span class="input-group-text">unit</span>
+            </div>
+        </div>
+
+        <div class="input-group my-3">
+            <input type="number" title="This is side b" class="form-control" id="rectAb" placeholder="Enter b side">
+            <div class="input-group-append">
+                <span class="input-group-text">unit</span>
+            </div>
+        </div>
+        <button type="button" onclick="calArea()" class="btn btn-primary btn-lg btn-block">Calculate area</button>
+        <div class="alert alert-primary my-4" role="alert">
+            <h5 id="uttar">Please enter right number</h5>
+        </div>
+        <hr>
+        <!-- this is the perimeter of rect -->
+        <div class="input-group my-2">
+            <input type="number" title="This is side a" class="form-control" id="rectPa" placeholder="Enter a side">
+            <div class="input-group-append">
+                <span class="input-group-text">unit</span>
+            </div>
+        </div>
+        <div class="input-group my-3">
+            <input type="number" title="This is side b" class="form-control" id="rectPb" placeholder="Enter b side">
+            <div class="input-group-append">
+                <span class="input-group-text">unit</span>
+            </div>
+        </div>
+        <button type="button" onclick="calPeri()" class="btn btn-primary btn-lg btn-block">Calculate
+            perimeter</button>
+        <div class="alert alert-primary my-4" role="alert">
+            <h5 id="uttar2">Please enter right number</h5>
+        </div>
     </div>
 </body>
 
